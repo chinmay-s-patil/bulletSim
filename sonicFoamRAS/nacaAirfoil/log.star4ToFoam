@@ -1,0 +1,57 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2406                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _9bfe8264-20241212 OPENFOAM=2406 patch=241212 version=2406
+Arch   : "LSB;label=32;scalar=64"
+Exec   : star4ToFoam -scale 1 /usr/lib/openfoam/openfoam2406/tutorials/resources/geometry/nacaAirfoil/nacaAirfoil
+Date   : Aug 24 2025
+Time   : 05:36:52
+Host   : Indigo
+PID    : 4977
+I/O    : uncollated
+Case   : /mnt/e/Repository/Projects/bulletSim/sonicFoamRAS/nacaAirfoil
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+no constant/boundaryRegion information available
+no constant/cellTable information available
+Number of points  = 80860
+Number of fluids  = 40000
+Number of baffles = 0
+Number of solids  = 0 (ignored)
+Number of shells  = 0 (ignored)
+Number of patches = 5 (including extra for missing) with 80860 faces
+patch 0 (region 1: inlet) type: 'patch' name: inlet_1
+patch 1 (region 2: outlet) type: 'patch' name: outlet_2
+patch 2 (region 3: symplane) type: 'symmetry' name: symplane_3
+patch 3 (region 4: wall) type: 'wall' name: wall_4
+patch 4 (region 0: none) type: 'patch' name: Default_Boundary_Region
+Creating a polyMesh
+Maximum possible number of faces in mesh: 240000
+Number of internal faces: 79570
+
+There are 80860 faces to be patched and 80860 specified - collect missed boundaries to final patch
+Missing faces added to patch after face 160430:
+Added 0 unmatched faces
+Number of boundary faces: 80860
+Total number of faces: 160430
+Number of interfaces: 0
+Removing 1 empty patches
+
+Default patch type set to empty
+cellZones not used
+Writing polyMesh
+Writing cellTable to "constant/cellTable"
+Writing interfaces to "/mnt/e/Repository/Projects/bulletSim/sonicFoamRAS/nacaAirfoil/constant/polyMesh/interfaces"
+Writing origCellId to "/mnt/e/Repository/Projects/bulletSim/sonicFoamRAS/nacaAirfoil/constant/polyMesh/origCellId"
+Writing cellTableId to "/mnt/e/Repository/Projects/bulletSim/sonicFoamRAS/nacaAirfoil/constant/polyMesh/cellTableId"
+
+End
+

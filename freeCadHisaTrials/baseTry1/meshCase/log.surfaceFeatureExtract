@@ -1,0 +1,137 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2212                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 34e226dfe3-20211220 OPENFOAM=2212 version=v2212
+Arch   : "LSB;label=32;scalar=64"
+Exec   : D:\Storage\Apps\ESI-OpenCFD\OpenFOAM\v2212\\msys64\home\ofuser\OpenFOAM\OpenFOAM-v2212\platforms\win64MingwDPInt32Opt\bin\surfaceFeatureExtract.exe
+Date   : Aug 24 2025
+Time   : 17:46:10
+Host   : INDIGO
+PID    : 33580
+I/O    : uncollated
+Case   : E:/TemporaryWorkspace/freeCAD/Unnamed/meshCase
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+
+Note: Feature line extraction only valid on closed manifold surfaces
+
+Reading surfaceFeatureExtractDict
+
+Surfaces     : Pad_Geometry.stl
+Output       : Pad_Geometry
+Load options : offset
+Write options: writeObj=yes writeVTK=off
+
+Statistics:
+Triangles    : 32 in 6 region(s)
+Vertices     : 16
+Bounding Box : (-5 -0.100000001490116 -2) (20 0.100000001490116 2)
+
+Constructing feature set from included angle 150
+Selecting edges based purely on geometric tests: no
+
+Initial Feature set:
+    points : 16
+    edges  : 24
+    of which
+        region edges   : 20
+        external edges : 0
+        internal edges : 4
+
+Final Feature set:
+    points : 16
+    of which
+        convex             : 8
+        concave            : 0
+        mixed              : 8
+        non-feature        : 0
+    edges  : 24
+    of which
+        external edges     : 20
+        internal edges     : 4
+        flat edges         : 0
+        open edges         : 0
+        multiply connected : 0
+
+Writing extendedFeatureEdgeMesh to "E:/TemporaryWorkspace/freeCAD/Unnamed/meshCase/constant/extendedFeatureEdgeMesh/Pad_Geometry.extendedFeatureEdgeMesh"
+
+Writing extendedEdgeMesh components to "E:/TemporaryWorkspace/freeCAD/Unnamed/meshCase/constant/extendedFeatureEdgeMesh/Pad_Geometry"
+Writing 8 convex feature points to "E:/TemporaryWorkspace/freeCAD/Unnamed/meshCase/constant/extendedFeatureEdgeMesh/Pad_Geometry_convexFeaturePts.obj"
+Writing 0 concave feature points to "E:/TemporaryWorkspace/freeCAD/Unnamed/meshCase/constant/extendedFeatureEdgeMesh/Pad_Geometry_concaveFeaturePts.obj"
+Writing 8 mixed feature points to "E:/TemporaryWorkspace/freeCAD/Unnamed/meshCase/constant/extendedFeatureEdgeMesh/Pad_Geometry_mixedFeaturePts.obj"
+Writing 8 mixed feature point structure to "E:/TemporaryWorkspace/freeCAD/Unnamed/meshCase/constant/extendedFeatureEdgeMesh/Pad_Geometry_mixedFeaturePtsStructure.obj"
+Writing 20 external edges to "E:/TemporaryWorkspace/freeCAD/Unnamed/meshCase/constant/extendedFeatureEdgeMesh/Pad_Geometry_externalEdges.obj"
+Writing 4 internal edges to "E:/TemporaryWorkspace/freeCAD/Unnamed/meshCase/constant/extendedFeatureEdgeMesh/Pad_Geometry_internalEdges.obj"
+Writing 0 flat edges to "E:/TemporaryWorkspace/freeCAD/Unnamed/meshCase/constant/extendedFeatureEdgeMesh/Pad_Geometry_flatEdges.obj"
+Writing 0 open edges to "E:/TemporaryWorkspace/freeCAD/Unnamed/meshCase/constant/extendedFeatureEdgeMesh/Pad_Geometry_openEdges.obj"
+Writing 0 multiple edges to "E:/TemporaryWorkspace/freeCAD/Unnamed/meshCase/constant/extendedFeatureEdgeMesh/Pad_Geometry_multipleEdges.obj"
+Writing 20 region edges to "E:/TemporaryWorkspace/freeCAD/Unnamed/meshCase/constant/extendedFeatureEdgeMesh/Pad_Geometry_regionEdges.obj"
+Writing 24 edge directions to "E:/TemporaryWorkspace/freeCAD/Unnamed/meshCase/constant/extendedFeatureEdgeMesh/Pad_Geometry_edgeDirections.obj"
+
+Writing featureEdgeMesh to "E:/TemporaryWorkspace/freeCAD/Unnamed/meshCase/constant/triSurface/Pad_Geometry.eMesh"
+Surfaces     : MeshRefinement.stl
+Output       : MeshRefinement
+Load options : offset
+Write options: writeObj=yes writeVTK=off
+
+Statistics:
+Triangles    : 8 in 1 region(s)
+Vertices     : 8
+Bounding Box : (-0.0500000007450581 -0.100000001490116 -0.0500000007450581) (0.0500000007450581 0.100000001490116 0.0500000007450581)
+
+Constructing feature set from included angle 150
+Selecting edges based purely on geometric tests: no
+
+Initial Feature set:
+    points : 8
+    edges  : 12
+    of which
+        region edges   : 8
+        external edges : 0
+        internal edges : 4
+
+Final Feature set:
+    points : 8
+    of which
+        convex             : 0
+        concave            : 0
+        mixed              : 8
+        non-feature        : 0
+    edges  : 12
+    of which
+        external edges     : 0
+        internal edges     : 4
+        flat edges         : 0
+        open edges         : 8
+        multiply connected : 0
+
+Writing extendedFeatureEdgeMesh to "E:/TemporaryWorkspace/freeCAD/Unnamed/meshCase/constant/extendedFeatureEdgeMesh/MeshRefinement.extendedFeatureEdgeMesh"
+
+Writing extendedEdgeMesh components to "E:/TemporaryWorkspace/freeCAD/Unnamed/meshCase/constant/extendedFeatureEdgeMesh/MeshRefinement"
+Writing 0 convex feature points to "E:/TemporaryWorkspace/freeCAD/Unnamed/meshCase/constant/extendedFeatureEdgeMesh/MeshRefinement_convexFeaturePts.obj"
+Writing 0 concave feature points to "E:/TemporaryWorkspace/freeCAD/Unnamed/meshCase/constant/extendedFeatureEdgeMesh/MeshRefinement_concaveFeaturePts.obj"
+Writing 8 mixed feature points to "E:/TemporaryWorkspace/freeCAD/Unnamed/meshCase/constant/extendedFeatureEdgeMesh/MeshRefinement_mixedFeaturePts.obj"
+Writing 8 mixed feature point structure to "E:/TemporaryWorkspace/freeCAD/Unnamed/meshCase/constant/extendedFeatureEdgeMesh/MeshRefinement_mixedFeaturePtsStructure.obj"
+Writing 0 external edges to "E:/TemporaryWorkspace/freeCAD/Unnamed/meshCase/constant/extendedFeatureEdgeMesh/MeshRefinement_externalEdges.obj"
+Writing 4 internal edges to "E:/TemporaryWorkspace/freeCAD/Unnamed/meshCase/constant/extendedFeatureEdgeMesh/MeshRefinement_internalEdges.obj"
+Writing 0 flat edges to "E:/TemporaryWorkspace/freeCAD/Unnamed/meshCase/constant/extendedFeatureEdgeMesh/MeshRefinement_flatEdges.obj"
+Writing 8 open edges to "E:/TemporaryWorkspace/freeCAD/Unnamed/meshCase/constant/extendedFeatureEdgeMesh/MeshRefinement_openEdges.obj"
+Writing 0 multiple edges to "E:/TemporaryWorkspace/freeCAD/Unnamed/meshCase/constant/extendedFeatureEdgeMesh/MeshRefinement_multipleEdges.obj"
+Writing 8 region edges to "E:/TemporaryWorkspace/freeCAD/Unnamed/meshCase/constant/extendedFeatureEdgeMesh/MeshRefinement_regionEdges.obj"
+Writing 12 edge directions to "E:/TemporaryWorkspace/freeCAD/Unnamed/meshCase/constant/extendedFeatureEdgeMesh/MeshRefinement_edgeDirections.obj"
+
+Writing featureEdgeMesh to "E:/TemporaryWorkspace/freeCAD/Unnamed/meshCase/constant/triSurface/MeshRefinement.eMesh"
+ExecutionTime = 0.024 s  ClockTime = 0 s
+
+End
+

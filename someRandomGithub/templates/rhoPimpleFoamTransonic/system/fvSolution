@@ -1,0 +1,117 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2212                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      fvSolution;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+solvers
+{
+    // OPTION 1
+    p
+    {
+        solver          PBiCGStab;
+        preconditioner  DILU;
+        tolerance       1e-15;
+        relTol          0.01;
+        minIter         1;
+    }
+
+    pFinal
+    {
+        $p;
+        relTol          0.1;
+    }
+
+    // OPTION 2
+    // p
+    // {
+    //     solver          GAMG;
+    //     smoother        GaussSeidel;
+    //     tolerance       1e-14;
+    //     relTol          0.01;
+    //     minIter         1;
+    // }
+
+    // pFinal
+    // {
+    //     $p;
+    //     relTol          0.0;
+    // }
+
+    "(rho|U|e)"
+    {
+        solver          PBiCGStab;
+        preconditioner  DILU;
+        tolerance       1e-14;
+        relTol          0.01;
+        minIter         1;
+    }
+
+    "(rho|U|e)Final"
+    {
+        $U;
+        relTol          0.1;
+    }
+
+    "(k|omega)"
+    {
+        solver          PBiCGStab;
+        preconditioner  DILU;
+        tolerance       1e-14;
+        relTol          0.01;
+        minIter         1;
+    }
+
+    "(k|omega)Final"
+    {
+        $k;
+        relTol          0.1;
+    }
+}
+
+PIMPLE
+{
+    momentumPredictor        yes;
+    nCorrectors              2;
+    nNonOrthogonalCorrectors 1;
+    nOuterCorrectors         1;
+    
+    // NOTE: transonic activated at 0.5 Mach frestream, recomendation
+    transonic       yes;    // Transonic flow ON
+
+    pMinFactor      0.02;
+    pMaxFactor      4;
+
+    // NOTE: Can be defined in the controlDict file
+    // maxCo                   {{ maxCo }};
+    // rDeltaTSmoothingCoeff   0.1;
+    // rDeltaTDampingCoeff     1;
+    // maxDeltaT               1;
+}
+
+// OPTION 2
+// relaxationFactors
+// {
+//     fields
+//     {
+//         p       0.6;
+//         pFinal  1.0;
+//     }
+
+//     equations
+//     {
+//         ".*"    0.8;
+//     }
+// }
+
+// ************************************************************************* //

@@ -1,0 +1,80 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2406                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _9bfe8264-20241212 OPENFOAM=2406 patch=241212 version=2406
+Arch   : "LSB;label=32;scalar=64"
+Exec   : postProcess -func sample -noZero
+Date   : Apr 09 2025
+Time   : 01:48:45
+Host   : Indigo
+PID    : 3255
+I/O    : uncollated
+Case   : /mnt/e/Repository/OpenFoam/bulletSim/trial
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0.001
+
+Sampled set:
+    data -> raw
+
+Time = 0.001
+
+Reading fields:
+    volScalarField: T mag(U) p
+
+Executing functionObjects
+
+Time = 0.002
+
+Reading fields:
+    volScalarField: T mag(U) p
+
+Executing functionObjects
+
+Time = 0.003
+
+Reading fields:
+    volScalarField: T mag(U) p
+
+Executing functionObjects
+
+Time = 0.004
+
+Reading fields:
+    volScalarField: T mag(U) p
+
+Executing functionObjects
+
+Time = 0.005
+
+Reading fields:
+    volScalarField: T mag(U) p
+
+Executing functionObjects
+
+Time = 0.006
+
+Reading fields:
+    volScalarField: T mag(U) p
+
+Executing functionObjects
+
+Time = 0.007
+
+Reading fields:
+    volScalarField: T mag(U) p
+
+Executing functionObjects
+
+End
+

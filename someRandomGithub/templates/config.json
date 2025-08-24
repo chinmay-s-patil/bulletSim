@@ -1,0 +1,61 @@
+{
+  "solver": "rhoCentralFoam",
+  "mesh_file": "/data/OpenFOAM-ToolChain-for-Rocket-Aerodynamic-Analysis/rocketMesh/rocketShort/noFinSupport/R1/constant/polyMesh",
+  "map_file": "none",
+  "flowVelocity": [
+    652.8980028602759,
+    0,
+    187.2154896913251
+  ],
+  "nprocessors": [
+    4,
+    2,
+    2
+  ],
+  "pressure": 12866.914,
+  "temperature": 216.99716,
+  "density": 0.20630362,
+  "Aref": 0.001282603306,
+  "lRef": 0.05715,
+  "coeffs_variation": [
+    0.001,
+    0.001,
+    0.01
+  ],
+  "coeffs_range": [
+    300,
+    300,
+    300
+  ],
+  "CofR": [
+    0.7286625,
+    0,
+    0
+  ],
+  "liftDir": [
+    0,
+    0,
+    1
+  ],
+  "dragDir": [
+    1,
+    0,
+    0
+  ],
+  "pitchAxis": [
+    0,
+    1,
+    0
+  ],
+  "Cd_windTunnel": 0.352857475917778,
+  "Cl_windTunnel": 2.6608101957819708,
+  "CmPitch_windTunnel": 10.612903471479184,
+  "purgeWrite": 2,
+  "turbulentKE": 0.0313534687076246,
+  "turbulentOmega": 648.9584107307387,
+  "wallModelnut": true,
+  "wallModelk": true,
+  "vanLeer": 2000,
+  "minIter": 3000,
+  "final_Co": 0.32
+}

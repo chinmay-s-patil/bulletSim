@@ -1,0 +1,37 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2212                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 34e226dfe3-20211220 OPENFOAM=2212 version=v2212
+Arch   : "LSB;label=32;scalar=64"
+Exec   : D:\Storage\Apps\ESI-OpenCFD\OpenFOAM\v2212\\msys64\home\ofuser\OpenFOAM\OpenFOAM-v2212\platforms\win64MingwDPInt32Opt\bin\foamToSurface.exe -scale 1000 -tri surfaceMesh.vtk
+Date   : Feb 13 2025
+Time   : 14:50:35
+Host   : INDIGO
+PID    : 5180
+I/O    : uncollated
+Case   : E:/TemporaryWorkspace/freeCAD/bulletSim/meshCase
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+--> FOAM Warning : 
+    From static Foam::instantList Foam::timeSelector::select0(Foam::Time&, const Foam::argList&)
+    in file db/Time/timeSelector.C at line 258
+    No time specified or available, selecting 'constant'
+Create polyMesh for time = constant
+
+
+Time [0] = constant
+writing "surfaceMesh.vtk" triangulated with scaling 1000
+
+
+End
+

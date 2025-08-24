@@ -1,0 +1,21 @@
+.vscode
+log.*
+processor*
+0
+polyMesh
+debug.vtk
+run
+todo
+postProcessing
+*/tables
+dynamicCode
+*.foam
+*.stl
+*.fms
+*.hdf
+*.out
+*.pyc
+
+
+# Ignore every stl file EXCEPT FOR the ones in the 'rocketMesh/___/___/parts' folder
+!rocketMesh/rocketShort/noFinSupport/parts/*.stl

@@ -1,0 +1,67 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2212                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 34e226dfe3-20211220 OPENFOAM=2212 version=v2212
+Arch   : "LSB;label=32;scalar=64"
+Exec   : hisa -parallel
+Date   : Feb 13 2025
+Time   : 14:54:56
+Host   : INDIGO
+PID    : 28272
+I/O    : uncollated
+Case   : E:/TemporaryWorkspace/freeCAD/bulletSim/case
+nProcs : 8
+Hosts  :
+(
+    (INDIGO 8)
+)
+Pstream initialized with:
+    floatTransfer      : 0
+    nProcsSimpleSum    : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0, region region0
+Creating static mesh
+
+Transient analysis detected
+
+pseudoTime: max iterations = 100, tolerance = 0.001 (0.001 0.001 0.001) 0.001 , relTol = 0.01 (0.01 0.01 0.01) 0.01 
+
+Local timestepping selected
+
+Reading thermophysical properties
+
+Selecting thermodynamics package 
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    specie          specie;
+    equationOfState perfectGas;
+    thermo          hConst;
+    transport       sutherland;
+    energy          sensibleInternalEnergy;
+}
+
+
+job aborted:
+[ranks] message
+
+[0-7] process exited without calling finalize
+
+---- error analysis -----
+
+[0-7] on INDIGO
+hisa ended prematurely and may have crashed. exit code 3
+
+---- error analysis -----

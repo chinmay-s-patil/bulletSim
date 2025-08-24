@@ -1,0 +1,136 @@
+[
+    {
+        "label": "*",
+        "importPath": "paraview.simple",
+        "description": "paraview.simple",
+        "isExtraImport": true,
+        "detail": "paraview.simple",
+        "documentation": {}
+    },
+    {
+        "label": "pfoam",
+        "kind": 5,
+        "importPath": "pvScript",
+        "description": "pvScript",
+        "peekOfCode": "pfoam = OpenFOAMReader(FileName=r'pv.foam')\npfoam.CaseType = 'Decomposed Case'\nif hasattr(pfoam, 'Decomposepolyhedra'):\n    pfoam.Decomposepolyhedra = 0\n# get active view\nrenderView1 = GetActiveViewOrCreate('RenderView')\n# reset view to fit data\nrenderView1.ResetCamera()\n# create a new 'Clean to Grid'\ncleantoGrid1 = CleantoGrid(Input=pfoam)",
+        "detail": "pvScript",
+        "documentation": {}
+    },
+    {
+        "label": "pfoam.CaseType",
+        "kind": 5,
+        "importPath": "pvScript",
+        "description": "pvScript",
+        "peekOfCode": "pfoam.CaseType = 'Decomposed Case'\nif hasattr(pfoam, 'Decomposepolyhedra'):\n    pfoam.Decomposepolyhedra = 0\n# get active view\nrenderView1 = GetActiveViewOrCreate('RenderView')\n# reset view to fit data\nrenderView1.ResetCamera()\n# create a new 'Clean to Grid'\ncleantoGrid1 = CleantoGrid(Input=pfoam)\n# show data in view",
+        "detail": "pvScript",
+        "documentation": {}
+    },
+    {
+        "label": "renderView1",
+        "kind": 5,
+        "importPath": "pvScript",
+        "description": "pvScript",
+        "peekOfCode": "renderView1 = GetActiveViewOrCreate('RenderView')\n# reset view to fit data\nrenderView1.ResetCamera()\n# create a new 'Clean to Grid'\ncleantoGrid1 = CleantoGrid(Input=pfoam)\n# show data in view\ncleantoGrid1Display = Show(cleantoGrid1, renderView1)\n# hide data in view\nHide(pfoam, renderView1)\n# get color transfer function/color map for 'U'",
+        "detail": "pvScript",
+        "documentation": {}
+    },
+    {
+        "label": "cleantoGrid1",
+        "kind": 5,
+        "importPath": "pvScript",
+        "description": "pvScript",
+        "peekOfCode": "cleantoGrid1 = CleantoGrid(Input=pfoam)\n# show data in view\ncleantoGrid1Display = Show(cleantoGrid1, renderView1)\n# hide data in view\nHide(pfoam, renderView1)\n# get color transfer function/color map for 'U'\nULUT = GetColorTransferFunction('U')\n# trace defaults for the display properties.\ncleantoGrid1Display.ColorArrayName = ['POINTS', 'U']\ncleantoGrid1Display.LookupTable = ULUT",
+        "detail": "pvScript",
+        "documentation": {}
+    },
+    {
+        "label": "cleantoGrid1Display",
+        "kind": 5,
+        "importPath": "pvScript",
+        "description": "pvScript",
+        "peekOfCode": "cleantoGrid1Display = Show(cleantoGrid1, renderView1)\n# hide data in view\nHide(pfoam, renderView1)\n# get color transfer function/color map for 'U'\nULUT = GetColorTransferFunction('U')\n# trace defaults for the display properties.\ncleantoGrid1Display.ColorArrayName = ['POINTS', 'U']\ncleantoGrid1Display.LookupTable = ULUT\ncleantoGrid1Display.EdgeColor = [0.0, 0.0, 0.5]\ncleantoGrid1Display.ScalarOpacityUnitDistance = 0.05",
+        "detail": "pvScript",
+        "documentation": {}
+    },
+    {
+        "label": "ULUT",
+        "kind": 5,
+        "importPath": "pvScript",
+        "description": "pvScript",
+        "peekOfCode": "ULUT = GetColorTransferFunction('U')\n# trace defaults for the display properties.\ncleantoGrid1Display.ColorArrayName = ['POINTS', 'U']\ncleantoGrid1Display.LookupTable = ULUT\ncleantoGrid1Display.EdgeColor = [0.0, 0.0, 0.5]\ncleantoGrid1Display.ScalarOpacityUnitDistance = 0.05\n# get animation scene\nanimationScene1 = GetAnimationScene()\n# update animation scene based on data timesteps\nanimationScene1.UpdateAnimationUsingDataTimeSteps()",
+        "detail": "pvScript",
+        "documentation": {}
+    },
+    {
+        "label": "cleantoGrid1Display.ColorArrayName",
+        "kind": 5,
+        "importPath": "pvScript",
+        "description": "pvScript",
+        "peekOfCode": "cleantoGrid1Display.ColorArrayName = ['POINTS', 'U']\ncleantoGrid1Display.LookupTable = ULUT\ncleantoGrid1Display.EdgeColor = [0.0, 0.0, 0.5]\ncleantoGrid1Display.ScalarOpacityUnitDistance = 0.05\n# get animation scene\nanimationScene1 = GetAnimationScene()\n# update animation scene based on data timesteps\nanimationScene1.UpdateAnimationUsingDataTimeSteps()\n# go to the final timestep of the simulation\ntimesteps = pfoam.TimestepValues",
+        "detail": "pvScript",
+        "documentation": {}
+    },
+    {
+        "label": "cleantoGrid1Display.LookupTable",
+        "kind": 5,
+        "importPath": "pvScript",
+        "description": "pvScript",
+        "peekOfCode": "cleantoGrid1Display.LookupTable = ULUT\ncleantoGrid1Display.EdgeColor = [0.0, 0.0, 0.5]\ncleantoGrid1Display.ScalarOpacityUnitDistance = 0.05\n# get animation scene\nanimationScene1 = GetAnimationScene()\n# update animation scene based on data timesteps\nanimationScene1.UpdateAnimationUsingDataTimeSteps()\n# go to the final timestep of the simulation\ntimesteps = pfoam.TimestepValues\nfinalTime =  timesteps[-1]",
+        "detail": "pvScript",
+        "documentation": {}
+    },
+    {
+        "label": "cleantoGrid1Display.EdgeColor",
+        "kind": 5,
+        "importPath": "pvScript",
+        "description": "pvScript",
+        "peekOfCode": "cleantoGrid1Display.EdgeColor = [0.0, 0.0, 0.5]\ncleantoGrid1Display.ScalarOpacityUnitDistance = 0.05\n# get animation scene\nanimationScene1 = GetAnimationScene()\n# update animation scene based on data timesteps\nanimationScene1.UpdateAnimationUsingDataTimeSteps()\n# go to the final timestep of the simulation\ntimesteps = pfoam.TimestepValues\nfinalTime =  timesteps[-1]\nanimationScene1.AnimationTime = finalTime",
+        "detail": "pvScript",
+        "documentation": {}
+    },
+    {
+        "label": "cleantoGrid1Display.ScalarOpacityUnitDistance",
+        "kind": 5,
+        "importPath": "pvScript",
+        "description": "pvScript",
+        "peekOfCode": "cleantoGrid1Display.ScalarOpacityUnitDistance = 0.05\n# get animation scene\nanimationScene1 = GetAnimationScene()\n# update animation scene based on data timesteps\nanimationScene1.UpdateAnimationUsingDataTimeSteps()\n# go to the final timestep of the simulation\ntimesteps = pfoam.TimestepValues\nfinalTime =  timesteps[-1]\nanimationScene1.AnimationTime = finalTime\n# rescale color and/or opacity maps used to exactly fit the current data range",
+        "detail": "pvScript",
+        "documentation": {}
+    },
+    {
+        "label": "animationScene1",
+        "kind": 5,
+        "importPath": "pvScript",
+        "description": "pvScript",
+        "peekOfCode": "animationScene1 = GetAnimationScene()\n# update animation scene based on data timesteps\nanimationScene1.UpdateAnimationUsingDataTimeSteps()\n# go to the final timestep of the simulation\ntimesteps = pfoam.TimestepValues\nfinalTime =  timesteps[-1]\nanimationScene1.AnimationTime = finalTime\n# rescale color and/or opacity maps used to exactly fit the current data range\ncleantoGrid1Display.RescaleTransferFunctionToDataRange(False, True)\n# update the view to ensure updated data information",
+        "detail": "pvScript",
+        "documentation": {}
+    },
+    {
+        "label": "timesteps",
+        "kind": 5,
+        "importPath": "pvScript",
+        "description": "pvScript",
+        "peekOfCode": "timesteps = pfoam.TimestepValues\nfinalTime =  timesteps[-1]\nanimationScene1.AnimationTime = finalTime\n# rescale color and/or opacity maps used to exactly fit the current data range\ncleantoGrid1Display.RescaleTransferFunctionToDataRange(False, True)\n# update the view to ensure updated data information\nrenderView1.Update()\n# reset view to fit data\nrenderView1.ResetCamera(False)",
+        "detail": "pvScript",
+        "documentation": {}
+    },
+    {
+        "label": "finalTime",
+        "kind": 5,
+        "importPath": "pvScript",
+        "description": "pvScript",
+        "peekOfCode": "finalTime =  timesteps[-1]\nanimationScene1.AnimationTime = finalTime\n# rescale color and/or opacity maps used to exactly fit the current data range\ncleantoGrid1Display.RescaleTransferFunctionToDataRange(False, True)\n# update the view to ensure updated data information\nrenderView1.Update()\n# reset view to fit data\nrenderView1.ResetCamera(False)",
+        "detail": "pvScript",
+        "documentation": {}
+    },
+    {
+        "label": "animationScene1.AnimationTime",
+        "kind": 5,
+        "importPath": "pvScript",
+        "description": "pvScript",
+        "peekOfCode": "animationScene1.AnimationTime = finalTime\n# rescale color and/or opacity maps used to exactly fit the current data range\ncleantoGrid1Display.RescaleTransferFunctionToDataRange(False, True)\n# update the view to ensure updated data information\nrenderView1.Update()\n# reset view to fit data\nrenderView1.ResetCamera(False)",
+        "detail": "pvScript",
+        "documentation": {}
+    }
+]

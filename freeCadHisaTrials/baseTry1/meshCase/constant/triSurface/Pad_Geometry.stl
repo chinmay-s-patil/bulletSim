@@ -1,0 +1,236 @@
+solid patch_1_0
+ facet normal -1.0 0.0 0.0
+  outer loop
+   vertex -5.0 0.1 -2.0
+   vertex -5.0 -0.1 2.0
+   vertex -5.0 0.1 2.0
+  endloop
+ endfacet
+ facet normal -1.0 0.0 0.0
+  outer loop
+   vertex -5.0 0.1 -2.0
+   vertex -5.0 -0.1 -2.0
+   vertex -5.0 -0.1 2.0
+  endloop
+ endfacet
+endsolid patch_1_0
+solid patch_2_0
+ facet normal 0.0 0.0 1.0
+  outer loop
+   vertex 20.0 0.1 2.0
+   vertex -5.0 0.1 2.0
+   vertex -5.0 -0.1 2.0
+  endloop
+ endfacet
+ facet normal 0.0 0.0 1.0
+  outer loop
+   vertex 20.0 0.1 2.0
+   vertex -5.0 -0.1 2.0
+   vertex 20.0 -0.1 2.0
+  endloop
+ endfacet
+ facet normal 0.0 0.0 -1.0
+  outer loop
+   vertex -5.0 0.1 -2.0
+   vertex 20.0 0.1 -2.0
+   vertex -5.0 -0.1 -2.0
+  endloop
+ endfacet
+ facet normal 0.0 0.0 -1.0
+  outer loop
+   vertex -5.0 -0.1 -2.0
+   vertex 20.0 0.1 -2.0
+   vertex 20.0 -0.1 -2.0
+  endloop
+ endfacet
+endsolid patch_2_0
+solid patch_3_1
+ facet normal 0.0 0.0 1.0
+  outer loop
+   vertex 0.05 0.1 -0.05
+   vertex -0.05 0.1 -0.05
+   vertex -0.05 -0.1 -0.05
+  endloop
+ endfacet
+ facet normal 0.0 0.0 1.0
+  outer loop
+   vertex 0.05 0.1 -0.05
+   vertex -0.05 -0.1 -0.05
+   vertex 0.05 -0.1 -0.05
+  endloop
+ endfacet
+ facet normal -1.0 0.0 -0.0
+  outer loop
+   vertex 0.05 0.1 0.05
+   vertex 0.05 0.1 -0.05
+   vertex 0.05 -0.1 -0.05
+  endloop
+ endfacet
+ facet normal -1.0 -0.0 0.0
+  outer loop
+   vertex 0.05 0.1 0.05
+   vertex 0.05 -0.1 -0.05
+   vertex 0.05 -0.1 0.05
+  endloop
+ endfacet
+ facet normal 0.0 0.0 -1.0
+  outer loop
+   vertex -0.05 0.1 0.05
+   vertex 0.05 0.1 0.05
+   vertex 0.05 -0.1 0.05
+  endloop
+ endfacet
+ facet normal 0.0 0.0 -1.0
+  outer loop
+   vertex -0.05 0.1 0.05
+   vertex 0.05 -0.1 0.05
+   vertex -0.05 -0.1 0.05
+  endloop
+ endfacet
+ facet normal 1.0 0.0 -0.0
+  outer loop
+   vertex -0.05 0.1 -0.05
+   vertex -0.05 0.1 0.05
+   vertex -0.05 -0.1 0.05
+  endloop
+ endfacet
+ facet normal 1.0 0.0 0.0
+  outer loop
+   vertex -0.05 0.1 -0.05
+   vertex -0.05 -0.1 0.05
+   vertex -0.05 -0.1 -0.05
+  endloop
+ endfacet
+endsolid patch_3_1
+solid patch_4_0
+ facet normal 1.0 0.0 -0.0
+  outer loop
+   vertex 20.0 0.1 -2.0
+   vertex 20.0 0.1 2.0
+   vertex 20.0 -0.1 2.0
+  endloop
+ endfacet
+ facet normal 1.0 0.0 0.0
+  outer loop
+   vertex 20.0 0.1 -2.0
+   vertex 20.0 -0.1 2.0
+   vertex 20.0 -0.1 -2.0
+  endloop
+ endfacet
+endsolid patch_4_0
+solid patch_5_0
+ facet normal 0.0 -1.0 0.0
+  outer loop
+   vertex -5.0 -0.1 -2.0
+   vertex -0.05 -0.1 -0.05
+   vertex -5.0 -0.1 2.0
+  endloop
+ endfacet
+ facet normal 0.0 -1.0 0.0
+  outer loop
+   vertex -5.0 -0.1 -2.0
+   vertex 0.05 -0.1 -0.05
+   vertex -0.05 -0.1 -0.05
+  endloop
+ endfacet
+ facet normal 0.0 -1.0 0.0
+  outer loop
+   vertex -0.05 -0.1 -0.05
+   vertex -0.05 -0.1 0.05
+   vertex -5.0 -0.1 2.0
+  endloop
+ endfacet
+ facet normal 0.0 -1.0 0.0
+  outer loop
+   vertex -0.05 -0.1 0.05
+   vertex 0.05 -0.1 0.05
+   vertex -5.0 -0.1 2.0
+  endloop
+ endfacet
+ facet normal 0.0 -1.0 0.0
+  outer loop
+   vertex 0.05 -0.1 -0.05
+   vertex 20.0 -0.1 2.0
+   vertex 0.05 -0.1 0.05
+  endloop
+ endfacet
+ facet normal 0.0 -1.0 0.0
+  outer loop
+   vertex 20.0 -0.1 -2.0
+   vertex 20.0 -0.1 2.0
+   vertex 0.05 -0.1 -0.05
+  endloop
+ endfacet
+ facet normal -0.0 -1.0 0.0
+  outer loop
+   vertex 20.0 -0.1 2.0
+   vertex -5.0 -0.1 2.0
+   vertex 0.05 -0.1 0.05
+  endloop
+ endfacet
+ facet normal 0.0 -1.0 0.0
+  outer loop
+   vertex -5.0 -0.1 -2.0
+   vertex 20.0 -0.1 -2.0
+   vertex 0.05 -0.1 -0.05
+  endloop
+ endfacet
+endsolid patch_5_0
+solid patch_5_2
+ facet normal 0.0 1.0 0.0
+  outer loop
+   vertex -0.05 0.1 -0.05
+   vertex -5.0 0.1 -2.0
+   vertex -5.0 0.1 2.0
+  endloop
+ endfacet
+ facet normal 0.0 1.0 0.0
+  outer loop
+   vertex 0.05 0.1 -0.05
+   vertex -5.0 0.1 -2.0
+   vertex -0.05 0.1 -0.05
+  endloop
+ endfacet
+ facet normal 0.0 1.0 0.0
+  outer loop
+   vertex -0.05 0.1 0.05
+   vertex -0.05 0.1 -0.05
+   vertex -5.0 0.1 2.0
+  endloop
+ endfacet
+ facet normal 0.0 1.0 0.0
+  outer loop
+   vertex 0.05 0.1 0.05
+   vertex -0.05 0.1 0.05
+   vertex -5.0 0.1 2.0
+  endloop
+ endfacet
+ facet normal 0.0 1.0 0.0
+  outer loop
+   vertex 20.0 0.1 2.0
+   vertex 0.05 0.1 -0.05
+   vertex 0.05 0.1 0.05
+  endloop
+ endfacet
+ facet normal 0.0 1.0 0.0
+  outer loop
+   vertex 20.0 0.1 2.0
+   vertex 20.0 0.1 -2.0
+   vertex 0.05 0.1 -0.05
+  endloop
+ endfacet
+ facet normal -0.0 1.0 0.0
+  outer loop
+   vertex -5.0 0.1 2.0
+   vertex 20.0 0.1 2.0
+   vertex 0.05 0.1 0.05
+  endloop
+ endfacet
+ facet normal 0.0 1.0 0.0
+  outer loop
+   vertex 20.0 0.1 -2.0
+   vertex -5.0 0.1 -2.0
+   vertex 0.05 0.1 -0.05
+  endloop
+ endfacet
+endsolid patch_5_2
